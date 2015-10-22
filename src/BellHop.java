@@ -5,7 +5,9 @@ public class BellHop extends Thread {
     public int bellhopID;
     public BellHop(int number)
     {
-        this.bellhopID = number;
+        this.bellhopID = number + 1;
+        System.out.println("BellHop  " + bellhopID + " has entered the matrix.");
+
     }
     public void run()
     {

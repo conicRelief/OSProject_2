@@ -5,10 +5,12 @@ public class FrontDesk extends Thread {
     public int deskID;
     public FrontDesk(int number)
     {
-        int deskID = number;
+        this.deskID = number + 1;
+        System.out.println("Front Desk Employee  " + deskID + " has entered the matrix.");
+
     }
     public void run()
     {
-        System.out.println("Front Desk No." + deskID + " is set up and ready to operate");
+        System.out.println("Front Desk Employee No." + deskID + " is set up and ready to start working");
     }
 }
